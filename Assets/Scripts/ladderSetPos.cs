@@ -14,7 +14,7 @@ public class ladderSetPos : MonoBehaviour
 
     void setPos()
     {
-        downPos = transform.position - new Vector3(0, transform.localScale.y / 2 - 0.5f);
-        upPos = transform.position + new Vector3(0, transform.localScale.y / 2 + 0.5f);
+        downPos = transform.position + new Vector3(0, -1f);
+        upPos = transform.position + new Vector3(0, 1f);
     }
 }

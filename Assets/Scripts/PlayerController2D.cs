@@ -84,7 +84,6 @@ public class PlayerController2D : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        print(collision.gameObject.layer);
         if (Mathf.Pow(2,collision.gameObject.layer) ==  ladderMask&& inClimb)
         {
             inClimb = false;
